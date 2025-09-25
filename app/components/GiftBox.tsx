@@ -27,6 +27,18 @@ export default function GiftBox() {
         >
           <div className="absolute left-[45%] h-full w-[10%] bg-white/80" />
         </motion.div>
+
+        {/* Cute "Click Me!" Text */}
+        {!open && (
+          <motion.div
+            initial={{ scale: 1, opacity: 1 }}
+            animate={{ scale: [1, 1.1, 1], opacity: [1, 0.9, 1] }}
+            transition={{ repeat: Infinity, duration: 1.2 }}
+            className="absolute bottom-2 left-1/2 -translate-x-1/2 text-white font-bold text-lg sm:text-xl pointer-events-none text-center"
+          >
+            Open Me!❤️
+          </motion.div>
+        )}
       </motion.div>
 
       {/* Message */}
@@ -46,14 +58,13 @@ export default function GiftBox() {
               Please forgive me 🙏
             </p>
 
-            {/* Learn More Button */}
             <motion.a
-              href="#more"
+              href="/im-sorry"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="mt-4 inline-block rounded-full bg-gradient-to-r from-pink-500 to-pink-700 px-5 py-2 text-sm font-medium text-white shadow-md hover:shadow-lg"
             >
-              Learn More
+              See My Apology Letter
             </motion.a>
           </motion.div>
         )}
