@@ -20,19 +20,6 @@ export default function Home() {
 
       <GiftBox />
 
-      {/* Section linked to Learn More */}
-      <section
-        id="more"
-        className="absolute bottom-0 w-full bg-white/80 py-8 text-center shadow-inner backdrop-blur-md"
-      >
-        <h2 className="text-2xl font-semibold text-pink-600">
-          My Apology Letter
-        </h2>
-        <p className="mx-auto mt-3 max-w-xl text-gray-700">
-          I know I upset you, and I’m deeply sorry for that. I built this page
-          as a little gesture to show how much you mean to me. ❤️
-        </p>
-      </section>
     </main>
   );
 }
